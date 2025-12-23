@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>詰将棋チャレンジ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>詰将棋チャレンジ</h1>
+  <div id="coin">🪙 コイン: 0</div>
+</header>
+
+<!-- 問題開始前広告 -->
+<div class="ad">
+  <!-- ここにAdSense等 -->
+  <p>広告</p>
+</div>
+
+<main>
+  <p>【1手詰】先手番</p>
+
+  <div id="board">
+    <button onclick="selectMove('７七桂')">７七桂</button>
+    <button onclick="selectMove('５五角')">５五角</button>
+    <button onclick="selectMove('８八銀')">８八銀</button>
+  </div>
+
+  <div id="result"></div>
+
+  <button id="rewardBtn" onclick="watchAd()" style="display:none;">
+    広告を見て +5コイン
+  </button>
+</main>
+
+<!-- 終了時広告 -->
+<div class="ad">
+  <p>広告</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
